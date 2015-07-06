@@ -1,40 +1,71 @@
 @import "settings";
 @import "foundation";
+@import "reset";
 
-// Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switches",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+
+
+/* -------- ATTENTE INDEX --------- 
+----------------------------------- */
+
+$blanc:#FFF;
+$gris:#e6e6e6;
+$rose:#ff3e54;
+$mauve:#8c7bfa;
+
+h2{
+	color:$mauve;
+	font-weight:700;
+	font-size:1.4em;
+}
+
+$slogan-font-family:"effra", sans-serif;
+
+body{
+	font-size:20px;
+	font-family:$font-family-sans-serif;
+}
+header{
+	background:url('../img/pattern-320.png') repeat-x;
+}
+#slogan{
+	margin:40px 0 35px 0;
+	text-transform:uppercase;
+	color:$blanc;
+	font-family:$slogan-font-family;
+	font-weight:300;
+}
+
+#info{
+	background-color:$gris;
+	padding:20px;
+	line-height:1.5;
+	color:$rose;
+	#mail{
+		margin: 35px auto;
+		font-weight: 700;
+
+		a:link, a:visited, a:active{
+			color: $rose;
+			border-bottom: 3px solid $rose;
+		}
+	}
+}
+footer{
+	background:url('../img/bg-lancement-mobile.png') no-repeat center;
+	background-size:100%;
+	padding:20px;
+	box-sizing:border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+
+	#date{
+		letter-spacing: 1px;
+		color:$mauve;
+		text-transform: uppercase;
+		font-family: $slogan-font-family;
+		padding-top: 8px;
+		font-size: 1.2em;
+		font-weight: 300;
+	}
+
+}
