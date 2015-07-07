@@ -46,6 +46,7 @@ header{
 
 		a:link, a:visited, a:active{
 			color: $rose;
+			border-position:0.2px;
 			border-bottom: 3px solid $rose;
 		}
 	}
@@ -154,6 +155,21 @@ footer{
 			min-width: 400px;
 			margin: 0 auto;
 		}
+		#mail{
+			a:link, a:visited, a:active{
+				//color: $rose;
+				//border-position:0.2px;
+				//border-bottom: 3px solid $rose;
+				transition:all .2s ease-in;
+				background-image: url(../img/bg-hover.svg);
+				background-repeat:no-repeat;
+				background-position:145px 0px;
+			}
+			a:hover{
+				padding-right: 20px;
+				border:none;
+			}
+		}
 	}
 	footer{
 		background:url('../img/bg-lancement-large.png') no-repeat center;
@@ -186,6 +202,13 @@ footer{
 	#info{
 		padding:140px 120px;
 		font-size: 1.4em;
+
+		#mail{
+			a:link, a:visited, a:active{
+				background-position:260px 0px;
+			}
+		}
+
 	}
 	#logo-container{
 		img{
