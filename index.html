@@ -16,25 +16,29 @@
 
   </head>
   <body>
-    <header id="entete" class="row">
-      <div id="slogan" class="wrapper small-12 text-center columns">
-        <p>Un geste qui vous revient</p>
-      </div>
-    </header>
-    <main class="row">
-      <div id="logo-container" class="small-12 medium-8 medium-centered columns">
-        <h1><img src="img/logo.svg" alt="Logo de Boomrang." /></h1>
-      </div><!-- fin de logo container -->
-      <div id="info" class="small-12 columns text-center">
-        <p>Boomrang est un partenaire phi-lanthropique qui contribue au mieux être des organismes. Notre engagement ne change pas le monde, mais avec chaque action posée, une petite différence est perçue par plusieurs.</p>
-        <p id="mail"> <a href="mailto:info@boomrang.ca">info@boomrang.ca</a></p>
-      </div>
-    </main>
-    <footer class="row">
-      <div id="lancement" class="small-12 columns text-center">
-        <p>Lancement: <span id="date">Automne 2015</span></p>
-      </div><!-- fin lancement -->
-    </footer>
+    <div id="wrapper">
+      <header id="entete" class="row">
+        <div id="slogan" class="wrapper small-12 text-center columns">
+          <p>Un geste qui vous revient</p>
+        </div>
+      </header>
+      <main id="main-content" class="row">
+        <div id="logo-container" class="small-12 medium-8 medium-centered  large-6 large-uncentered columns">
+          <h1><img src="img/logo.svg" alt="Logo de Boomrang." /></h1>
+        </div><!-- fin de logo container -->
+        <div id="info" class="small-12 large-6 columns text-center">
+          <div id="info-wrapper">
+            <p>Boomrang est un partenaire phi-lanthropique qui contribue au mieux être des organismes. Notre engagement ne change pas le monde, mais avec chaque action posée, une petite différence est perçue par plusieurs.</p>
+            <p id="mail"> <a href="mailto:info@boomrang.ca">info@boomrang.ca</a></p>
+          </div><!-- fin info-wrapper. max-width pour empecher l'étirement du bloc. -->
+        </div>
+      </main>
+      <footer id="bas-page" class="row">
+        <div id="lancement" class="small-12 columns text-center">
+          <p>Lancement: <span id="date">Automne 2015</span></p>
+        </div><!-- fin lancement -->
+      </footer>
+    </div><!-- end wrapper -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
